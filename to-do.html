@@ -1,0 +1,78 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<style>
+    .add,
+    .table-striped>* {
+        width: 100%;
+        text-align: center;
+    }
+
+    .table-striped>td {
+        width: 100%;
+    }
+
+</style>
+
+<body>
+    <div class="alert">
+
+    </div>
+    <div class="container-start container my-5 py-3 border rounded-1">
+        <div class="row justify-content-center align-items-start">
+            <div class="col-6">
+                <label for="id" class="form-label">Yapılacak İş :</label>
+                <input type="text" maxlength="20" id="text" class="form-control input-work">
+            </div>
+            <div class="col-6">
+                <label for="textarea" class="form-label">Yapılacak İş Detaylı :</label>
+                <textarea class="form-control input-workdetails" id="textarea" aria-label="With textarea"></textarea>
+            </div>
+            <div class="col-6">
+                <label for="who" class="form-label">Kim Yapacak :</label>
+                <input type="text" id="who" class="form-control input-name">
+            </div>
+            <div class="col-6">
+                <label for="date" class="form-label">Ne Zaman Yapacak :</label>
+                <input type="date" class="form-control input-date" id="date">
+            </div>
+            <div class="col-12 mt-5">
+                <button class="btn btn-outline-success w-100" id="addBtn">Ekle</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <table class="table mt-5">
+            <thead class="add">
+                <tr>
+                    <th scope="col">Yapılacak İş</th>
+                    <th scope="col">Yapılacak İş Detaylı</th>
+                    <th scope="col">Kim Yapacak</th>
+                    <th scope="col">Ne Zaman</th>
+                    <th scope="col">Sil</th>
+                    <th scope="col">Güncelle</th>
+                    <th scope="col">Yapıldı</th>
+                </tr>
+            </thead>
+            <tbody class="table table-striped">
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <script src="to-do.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
